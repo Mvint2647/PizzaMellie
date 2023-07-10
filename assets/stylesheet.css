@@ -1,0 +1,225 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&family=Rubik+Dirt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Rubik+Dirt&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rowdies', cursive;
+  color:white;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url(https://i.ibb.co/HrfVRcx/menu.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+}
+.toggle.active {
+  background: url(https://i.ibb.co/rt3HybH/close.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+}
+.showcase {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image:
+  linear-gradient(to bottom, rgba(11, 165, 0, 0.619), rgba(255, 0, 0, 0.454)),
+  url('/assets/pics/Pizza.jpg');
+  transition: 0.5s;
+  z-index: 2;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(255, 255, 255, 0.385);
+}
+.showcase.active {
+  right: 300px;
+}
+
+.text {
+  position: absolute;
+  text-align: center!important;
+}
+.text h1 {
+  font-size: 3em;
+  font-family: 'Fugaz One', cursive;
+  margin-bottom: 10px;
+  font-weight: 800;
+  color:rgb(255, 255, 255);
+  text-shadow: 5px 5px 8px rgb(0, 0, 0);
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text h2 {
+  font-size: 2em;
+  font-weight: 800;
+  color: rgb(255, 0, 0);
+  font-family: 'Rubik Dirt';
+  text-shadow: 5px 5px 8px rgb(0, 0, 0);
+  line-height: 1em;
+  align-items: center;
+  text-transform: uppercase;
+}
+.text h3 {
+  font-size:2em;
+  font-family: 'Rubik Dirt', cursive;
+  font-weight: 700;
+  color: rgb(255, 208, 0);
+  text-shadow: 5px 5px 8px rgb(0, 0, 0);
+  line-height: 1em;
+  text-align: center;
+  text-transform: uppercase;
+} 
+.text h4 {
+  font-size: 2em;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 6px rgb(255, 255, 255);
+  line-height: 1em;
+  font-family: 'Fugaz One', cursive;
+  text-transform: uppercase;
+  text-align: center;
+} 
+
+.text p {
+  font-size: 1.1em;
+  color: rgb(255, 255, 255);
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+.text a {
+  display:inline-flex;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+.text a:hover {
+  letter-spacing: 6px;
+}
+.social {
+  position: absolute;
+  z-index: 10;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social li {
+  list-style: none;
+}
+.social li a {
+  display: inline-block;
+  margin-right: 20px;
+  filter: invert(1);
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+.social li a:hover {
+  transform: scale(0.5) translateY(-15px);
+}
+.menu {
+  background-image:
+  linear-gradient(to bottom, rgba(121, 219, 114, 0.896), rgb(255, 133, 133)),
+  url('/assets/pics/overlay.png');
+  border-left: 3px solid white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 208, 0);
+  text-shadow: 3px 8px 8px rgb(0, 0, 0);
+}
+.items{
+  
+  background-color: rgb(246, 255, 0);
+  padding:10px;
+  box-shadow: rgb(0, 0, 0) 3px 4px 6px;
+}
+.menu ul {
+  position: relative;
+}
+.menu ul li {
+  list-style: none;
+}
+.menu ul li a {
+  text-decoration: none;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  background:black;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.menu ul li a:hover {
+  color: rgb(255, 208, 0);
+  text-shadow: 3px 8px 8px rgb(0, 0, 0);
+}
+h1{
+  color:rgb(0, 0, 0);
+  text-shadow: 3px 6px 6px rgb(255, 255, 255);
+  font-size: 50px;
+  text-align: center;
+  margin-bottom:20px;
+}
+.pic {
+width:50%;
+Height:50%;
+}
+.hidden {
+      display: none;
+    }
+@media (max-width: 991px) {
+  .showcase,
+  .showcase header {
+    padding: 40px;
+  }
+  .text h2 {
+    font-size: 3em;
+  }
+  .text h3 {
+    font-size: 2em;
+  }
+}
+

@@ -1,12 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PizzaMellie</title>
-</head>
-<body>
-    
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="assets/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet"></head>
+   
+
+    <body>
+    <section class="showcase">
+        <header>
+            <img class="logo" src="assets/pics/ZA.png" height="90" width="90">
+            <div class="toggle"></div>
+        </header>
+        
+        <div class="overlay"></div>
+        <div class="text">
+            <h1>Pizza Mellie Delivery</h1>
+            <br> 
+            
+            <div class="items">
+                <img src="assets/pics/cheese.png"height="220" width="220">
+                <img src="assets/pics/cookies.png"height="120" width="220" >
+                <img src="assets/pics/drink.png" height="220" width="220">
+            <h1> $5.00 Items!  </h1>
+            </div>
+            <br>
+            <br>
+            <h4> Call Us <br>OR <br>Visit Us online!<br><br> 704-704-7040 | PizzaMellie.com</h2>      
+            <img src="assets/pics/phone.png" class="centerImage" alt="CH Logo" height="100" width="100">
+            <img src="assets/pics/laptop.png" class="centerImage" alt="CH Logo" height="100" width="100">
+        
+             <br>         
+
+        <a href="#">Order Now</a>
+        </div>
+        <ul class="social">
+            <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <h1>MENU</h1>
+            <li><a href="#">Specials</a></li>
+            <br>
+            <li><a href="#">Pizza</a></li>
+            <br>
+            <li><a href="#">Stix</a></li>
+            <br>
+            <li><a href="#">Desserts</a></li>
+            <br>
+            <li><a href="#">Drinks</a></li>
+        </ul>
+    </div>       
+    <div>
+        <script>
+            const menuToggle = document.querySelector(".toggle");
+            const showcase = document.querySelector(".showcase");
+        
+            menuToggle.addEventListener("click", () => {
+                menuToggle.classList.toggle("active");
+                showcase.classList.toggle("active");
+            }); </script>
+           </div> 
 </body>
 </html>
