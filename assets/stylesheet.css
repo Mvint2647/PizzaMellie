@@ -7,6 +7,7 @@
   box-sizing: border-box;
   font-family: 'Rowdies', cursive;
   color:white;
+  
 }
 header {
   position: absolute;
@@ -18,6 +19,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 header .logo {
   text-transform: uppercase;
@@ -49,19 +51,20 @@ header .logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image:
-  linear-gradient(to bottom, rgba(11, 165, 0, 0.619), rgba(255, 0, 0, 0.454)),
-  url('/assets/pics/Pizza.jpg');
+ 
   transition: 0.5s;
   z-index: 2;
 }
 .overlay {
-  position: absolute;
+  position:absolute;
+  object-fit:fill;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color:rgba(255, 255, 255, 0.385);
+  background-image:
+  linear-gradient(to bottom, rgba(218, 255, 215, 0.195), rgb(169, 169, 169)),
+  url(https://source.unsplash.com/1600x900/?Pizza);
 }
 .showcase.active {
   right: 300px;
@@ -158,8 +161,7 @@ header .logo {
 }
 .menu {
   background-image:
-  linear-gradient(to bottom, rgba(121, 219, 114, 0.896), rgb(255, 133, 133)),
-  url('/assets/pics/overlay.png');
+  linear-gradient(to bottom, rgba(255, 0, 0, 0.896), rgb(255, 242, 0));
   border-left: 3px solid white;
   position: absolute;
   top: 0;
